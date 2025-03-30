@@ -160,8 +160,7 @@ button{
 }
 
 input:invalid + .error-message,
-textarea:invalid + .error-message,
- {
+textarea:invalid + .error-message {
     display: block;
 }
 
@@ -174,5 +173,68 @@ textarea:invalid + .error-message,
     display: block;
 }
 
-/*-------------------------------------------------------------------------------------*/
+/*--------------------------- Tablette ----------------------------- */
+@media screen and (max-width: 768px) {
+    .box {
+        width: 80%;
+        padding: 20px;
+        max-height: 105vh; 
+    }
 
+    .nomsPrenoms {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nomsPrenoms .formbox {
+        width: 100%;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        height: 35px;
+    }
+}
+
+/* ------------------------Version Mobile-------------------- */
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+
+    .box {
+        width: 95%;
+        padding: 15px;
+        max-height: 110vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .nomsPrenoms {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .checkbox-groupe {
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        height: 35px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 40px;
+    }
+}
